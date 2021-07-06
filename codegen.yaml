@@ -1,0 +1,11 @@
+overwrite: true
+schema: "https://strpi-atlas.herokuapp.com/graphql"
+documents: "src/**/*.graphql"
+generates:
+  src/types/generated.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:      
+      withHooks: true
